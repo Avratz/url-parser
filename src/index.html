@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Url Parser</title>
+
+</head>
+<body>
+  <main>
+    <form>
+      <h1>URL Parser</h1>
+      <label class="label__default">
+        URL Format (*):
+        <input type="text" id="urlFormat" placeholder="Enter url Format" value="/:version/api/:collection/:id" class="input__default" required />
+      </label>
+      <label class="label__default">
+        URL (*):
+        <input type="text" id="url" placeholder="Enter url" value="/6/api/listings/3?sort=desc&limit=10" class="input__default" required />
+      </label>
+
+      <button id="parse" class="btn btn__secondary" type="submit">Parse</button>
+    </form>
+
+    <pre id="result" class="result hidden">
+
+    </pre>
+  </main>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
